@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  geolocation_db:
+    container_name: geolocation_db
+    image: mysql
+    restart: on-failure
+    ports:
+      - "3306:3306"
+    env_file:
+      - ../.env
+    networks:
+      - geolocation
+
+networks:
+  geolocation:

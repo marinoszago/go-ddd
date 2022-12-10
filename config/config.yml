@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  host: "localhost"
+  protocol: "http"
+
+database:
+  name: "db"
+  user: "root"
+  password: "password"
+  host: "localhost"
+  port: "3306"
+
+importservice:
+  enabled: true
+  file: "./resources/data_dump.csv"
